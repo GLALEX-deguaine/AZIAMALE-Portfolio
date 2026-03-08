@@ -1,0 +1,22 @@
+.card-title-personal {
+    font-size: 50px;
+}
+
+.card-text-personal {
+    font-size: 20px;
+}
+
+.img-zoom {
+    transition: transform 0.3s;
+}
+
+.img-zoom:hover {
+    transform: scale(1.1);
+}
+.card-body{
+    text-align: right;
+}
+.name{
+    font-weight: bold;
+    font-size: 50px;
+}

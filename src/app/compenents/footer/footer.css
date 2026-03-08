@@ -1,0 +1,132 @@
+.text-color{
+    color: #de94e5;
+}
+
+.space{
+    height: 35px;
+}
+
+.footer-card{
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    border-top: 3px solid #de94e5;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #de94e5, transparent);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.footer-card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-card h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #de94e5;
+    transition: width 0.3s ease;
+}
+
+.footer-card h4:hover::after {
+    width: 100px;
+}
+
+.social-links-footer a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #de94e5 !important;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.social-links-footer a:hover {
+    background-color: rgba(222, 148, 229, 0.1);
+    transform: translateY(-2px);
+}
+
+.list-unstyled li a {
+    color: rgba(255, 255, 255, 0.7) !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+.list-unstyled li a:hover {
+    color: #de94e5 !important;
+    transform: translateX(5px);
+}
+
+.contact-info p {
+    color: rgba(255, 255, 255, 0.7) !important;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-info p:hover {
+    color: #de94e5 !important;
+    transform: translateX(5px);
+}
+
+.contact-info i {
+    font-size: 1.1rem;
+}
+
+.border-top {
+    border-color: rgba(222, 148, 229, 0.3) !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-card {
+        padding: 20px 0;
+    }
+    
+    .footer-card h4 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    .social-links-footer a {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+    
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animation pour le texte */
+.footer-card .text-white-50 {
+    transition: color 0.3s ease;
+}
+
+.footer-card .text-white-50:hover {
+    color: #de94e5 !important;
+}

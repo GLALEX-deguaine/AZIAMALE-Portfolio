@@ -1,0 +1,38 @@
+
+h1{
+    font-size: 60px;
+}
+
+.space{
+    height: 35px;
+}
+
+.skill-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill-circle{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 7px solid #de94e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.skill-text{
+    margin-top: 10px;
+    color: #de94e5;
+    p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

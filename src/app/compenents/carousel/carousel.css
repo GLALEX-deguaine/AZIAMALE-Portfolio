@@ -1,0 +1,81 @@
+.carousel{
+    .carouselImage{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+.image{
+    width:clamp(100px, 20vw, 400px);
+    height: 70vh;
+    z-index: 1;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.image:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    transition: all 0.2s ease;
+}
+.image:not(:hover){
+    filter:brightness(0.5);
+    transition: all 0.3s ease;
+}
+
+.portfolio-title{
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+    :first-child{
+        letter-spacing: 20px;
+        font-size: 120px;
+        margin-top: -98px;
+        position: absolute;
+        z-index: 5;
+        text-align: center;
+        animation: fadeIn linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 100%;
+    }
+    :last-child{
+        font-size: 25px;
+        letter-spacing: 18px;
+        padding-top: 70px;
+        z-index: 5;
+        text-align: center;
+        animation: fadeIn linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 100%;
+    }
+
+}
+
+
+.p-perso{
+    padding: 10px;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-title{
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0.7);
+        opacity: 1; 
+    }
+    to {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+}
